@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./Assigment-3.css">
+    <title>Train your brain!</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <h1>Train your brain!</h1>
+
+
+    <form id="quiz" name="quiz">
+
+
+        <p class="questions">Where was born Clint Eastwood?</p>
+        <input type="text " id="mc" name="question1"> City<br>
+
+
+
+        <p class="questions">What is the name of highest mountain the world? </p>
+        <input type="radio" class="mc" onclick="checker()" name="question2" value="Denali"> Denali<br>
+        <input type="radio" class="mc" onclick="checker()" name="question2" value="Kilimanjaro"> Kilimanjaro<br>
+        <input type="radio" class="mc" onclick="checker(Everest)" name="question2" value="Everest"> Everest<br>
+        <input type="radio" class="mc" onclick="checker(Elbrus)" name="question2" value="Elbrus"> Elbrus<br>
+
+
+        <p class="questions">How many planets are there in our solar system?</p>
+
+        <input type="radio" id="mc" name="question3" value="8"> 8<br>
+        <input type="radio" id="mc" name="question3" value="6"> 6<br>
+        <input type="radio" id="mc" name="question3" value="9"> 9<br>
+        <input type="radio" id="mc" name="question3" value="11"> 11<br>
+
+        <p class="questions">Which was the book written by Zoroaster? </p>
+
+        <input type="radio" id="mc" name="question4" value="Bible"> Bible<br>
+        <input type="radio" id="mc" name="question4" value="Green book"> Green book<br>
+        <input type="radio" id="mc" name="question4" value="Kamasutra"> Kamasutra<br>
+        <input type="radio" id="mc" name="question4" value="Avesta"> Avesta<br>
+
+        <p class="questions">Who is heaviest terrestrial animals?</p>
+
+        <input type="radio" id="mc" name="question5" value="Asian elephant">Asian elephant<br>
+        <input type="radio" id="mc" name="question5" value="Hippopotamus"> Hippopotamus<br>
+        <input type="radio" id="mc" name="question5" value="African bush elephant">African bush elephant<br>
+        <input type="radio" id="mc" name="question5" value="Giraffe">Giraffe<br>
+
+
+
+        <input id="button" type="button" value="I'm finished!" onclick="checker();">
+
+
+    </form>
+
+    <div id="submit">
+        <p id="number_correct"></p>
+        <p id="feedback"></p>
+        <img id="picture">
+    </div>
+    <script src="./Assigment-3.js"></script>
+
+
+</body>
+
+</html>
